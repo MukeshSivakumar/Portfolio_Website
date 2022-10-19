@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUKESH - Portfolio Website</title>
+    <link rel="stylesheet" href="portfolioStyle.css">
+    <script src="portfolio.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/573324bbcc.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <nav>
+                <img src="IMAGES/final_logo.PNG" id="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skillset">Skills</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="main">
+                <div class="main-content">
+                  <h4>Web-Developer</h4>
+                  <h1>Hi,I'm <span class="textColor">MUKESH</span><br>Front-End Web Developer <br><span class="textColor">HTML</span>, <span class="textColor">CSS</span>, <span class="textColor">JavaScript</span> </h1>
+                  <p id="demo1"></p>
+                  <p id="demo2"></p>
+                </div>
+                <div class="main-img">
+                </div>
+           </div>
+        </div>
+    </div>
+
+    <!---------------- ABOUT ------------------->
+
+    <div id="about">
+        <div class="about-container">
+            <div class="about-row">
+                <div class="about-col-1"></div>
+                <div class="about-col-2">
+                    <h2 class="sub-heading">About me</h2>
+                    <p class="about-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, eaque adipisci quibusdam exercitationem animi consequuntur beatae voluptatem, quod facilis maiores nisi vero consequatur nam. Alias natus, placeat magnam iste nobis odio, sapiente architecto ut vel, aut laborum nisi! Temporibus, architecto.</p>
+                    <ul class="head-section">
+                        <li id="skills"  class="inactive active" onclick="changeDisplay('skill-section','skills')">Skills</li>
+                        <li id="experience" class="inactive" onclick="changeDisplay('experience-section','experience')">Experience</li>
+                        <li id="education" class="inactive " onclick="changeDisplay('education-section','education')">Education</li>
+                        <li id="certificate" class="inactive" onclick="changeDisplay('certificate-section','certificate')">Certification</li>
+                    </ul>
+                    <div class="about-section">
+                       <ul id="skill-section">
+                          <li class="head-li">Web Development</li>
+                          <li>Web App Development</li>
+                          <li class="head-li">HTML-CSS-JS</li>
+                          <li>Skilled in Html,Css,JavaScript</li>
+                          <li class="head-li">Responsive Design</li>
+                          <li>Responsive Web Design Development</li>
+                       </ul>
+                       <ul id="experience-section">
+                          <li class="head-li">May 2019 - Nov 2020</li>
+                          <li>Member Technical Staff at ZOHO Corporation Pvt Ltd.</li>
+                          <li class="head-li">Dec 2018 - Feb 2019</li>
+                          <li>Project Trainee at ZOHO Corporation Pvt Ltd.</li>
+                       </ul>
+                       <ul id="education-section">
+                          <li class="head-li">B.E(ECE) - 2019</li>
+                          <li>Alagappa Chettiar Govt. Engg. College - Karaikudi.</li>
+                          <li class="head-li">HSC - 2015</li>
+                          <li>Erode Hindu Kalvi Nilayam MHSS - Erode.</li>
+                          <li class="head-li">SSLC - 2013</li>
+                          <li>P.A.C.M HSS - Rajapalayam.</li>
+                       </ul>
+                       <ul id="certificate-section">
+                          <h4>Fundamentals of Digital Marketing</h4>
+                          <li>Google Certified Digital Marketing Course</li>
+                          <li>Issued Apr-2022</li>
+                          <li>Credential ID - 2CK AGA GVD</li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!---------------- SKILLS ------------------->
+
+     <div id="skillset">
+       <div class="skillset-container">
+            <h2 class="sub-heading">Skills</h2>
+            <div class="skillset-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                   <h2>Web Design</h2>
+                   <p>Can create responsive website using languages html, css and make the website more interactive using javascript.</p>
+                   <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>  
+                    <h2>Front-End</h2>
+                    <p>Developed front-end features like pivot-placeholder,widget,errorcue in zohosheet using html, css and javascript. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div onmouseover="changebg('over','mob')" onmouseout="changebg('out','mob')">
+                    <!-- <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-square-js"></i> -->
+                    <i class="fa-solid fa-laptop"></i>
+                    <i id="mob" class="fa-solid fa-mobile-screen"></i>
+                    <h2>Responsive Design</h2>
+                    <p>Developed responsive websites where the UserInterface looks apt on mobile-view as well as desktop-view.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+       </div>
+     </div>
+
+    <!-- ----------------------------------- Portfolio----------------------------------- -->
+
+    <div id="portfolio">
+        <div class="portfolio-container">
+            <h2 class="sub-heading">My Work</h2>
+            <div class="portfolio-section">
+                <div class="task">
+                  <img src="IMAGES/portfolio-work.PNG" alt="QR-Code component">
+                  <div class="task-content">
+                     <h3>Portfolio Website</h3>
+                     <p>I have created a portfolio website to list my front-end works & my basic information.
+                        Click the icon below to preview the site.</p>
+                     <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                  </div>
+                </div>
+                <div class="task">
+                  <img src="IMAGES/qr-work.PNG" alt="portfolio website">
+                    <div class="task-content"> 
+                     <h3>QR - Component</h3>
+                     <p>Created a QR-component as a challenge from front-end mentor website using HTML, CSS.
+                        Click the icon below to preview the site.</p>
+                     <a href="https://mukeshsivakumar.github.io/QR-Code-Component/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="task">
+                  <img src="IMAGES/calculator-work.PNG" alt="calculator using javascript">
+                    <div class="task-content">
+                     <h3>Calculator</h3>
+                     <p>Created an interactive calculator task using HTML, CSS and Javascript.
+                        Click the icon below to preview the site.</p>
+                     <a href="https://mukeshsivakumar.github.io/Calculator/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------Contact--------------------------------------------- -->
+    <div id="contact">
+        <div class="contact-container">
+            <div class="row-contact">
+                <div class="contact-left">
+                    <h2 class="sub-heading">Contact Me</h2> 
+                    <p><i class="fa-solid fa-paper-plane"></i> mukeshsivakumar97@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 9894152665</p>
+                    <div class="contact-social-icons">
+                       <a href=""><i class="fa-brands fa-facebook"></i></a>
+                       <a href=""><i class="fa-brands fa-instagram"></i></a>
+                       <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                       <a href=""><i class="fa-brands fa-twitter"></i></a> 
+                    </div>
+                    <a href="IMAGES/MUKESH S.pdf" download><button class="btn">Download Resume</button></a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="user name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------------------copyright--------------------------------- -->
+        <div class="copyright">
+            <p>Copyright &copy; MUKESH. Created using <i id="html-icon" class="fa-brands fa-html5"></i> 
+                <i id="css-icon" class="fa-brands fa-css3-alt"></i> <i id="js-icon" class="fa-brands fa-square-js"></i> </p>
+        </div>
+    </div>
+   </body>
+</html>
