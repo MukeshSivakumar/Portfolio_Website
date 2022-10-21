@@ -164,6 +164,10 @@ nav ul li a:hover::after {
       margin-bottom : 20px;
 }
 
+.about-me {
+    line-height: 25px;
+}
+
 .about-me #heart{
     color: red;
     font-size: 20px;
