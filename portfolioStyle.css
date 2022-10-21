@@ -164,6 +164,16 @@ nav ul li a:hover::after {
       margin-bottom : 20px;
 }
 
+.about-me #heart{
+    color: red;
+    font-size: 20px;
+    margin : 0 3px;
+}
+.about-me .yellowColor {
+color : rgb(251, 186, 8);
+font-size: 20px;
+margin : 0 3px;
+}
 .about-col-2 .head-section li {
     list-style: none;
     display: inline-block;
