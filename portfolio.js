@@ -33,3 +33,19 @@ function changebg(event,mobileEle){
     }
     
 }
+
+// download resume function 
+
+function download()
+{
+    var authToken = prompt("Please Enter the password to download my resume");
+    if(authToken == "Muke_3059")
+    {
+        return true;
+    }
+    else{
+        alert("Wrong Password -- Access Denied");
+        return false;
+    }
+    
+}
