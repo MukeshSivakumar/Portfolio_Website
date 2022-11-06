@@ -568,7 +568,30 @@ form .btn {
 
 } */
 
-/* @media screen and (max-width:600px) {
+@media screen and (max-width:600px) {
 
-   
-} */
+    body *{
+        margin : 0;
+        padding : 10px;
+    }
+    .main {
+        width : 100vw;
+        background: url(IMAGES/mobile\ BG\ main.PNG);
+        background-size: contain;
+        background-position: top;
+    }
+    .main-img {
+        display: none;
+    }
+    .main-content {
+        margin : 180px 0 0 0;
+    }
+    .main-content h4,h1 {
+        font-size: 1rem;
+        line-height: 30px;
+    }
+    .textColor {
+        padding-left: 0;
+    }
+    
+}
