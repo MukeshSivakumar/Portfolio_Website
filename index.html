@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="https://kit.fontawesome.com/573324bbcc.js" crossorigin="anonymous"></script>
     <link rel="icon" href="IMAGES/title_logo.PNG">
+
 </head>
 <body>
     <div class="container">
@@ -28,8 +29,6 @@
                 <div class="main-content">
                   <h4>Web-Developer</h4>
                   <h1>Hi, I'm <span class="textColor">MUKESH</span><br>Front-End Web Developer <br><span class="textColor">HTML</span>, <span class="textColor">CSS</span>, <span class="textColor">JavaScript</span> </h1>
-                  <p id="demo1"></p>
-                  <p id="demo2"></p>
                 </div>
                 <div class="main-img">
                 </div>
@@ -100,13 +99,13 @@
                     <i class="fa-solid fa-laptop-code"></i>
                    <h2>Web Design</h2>
                    <p>Can create responsive website using languages html, css and make the website more interactive using javascript.</p>
-                   <a href="#">Learn more</a>
+                   <a href="">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-code"></i>  
                     <h2>Front-End</h2>
                     <p>Developed front-end features like pivot-placeholder,widget,errorcue in zohosheet using html, css and javascript. </p>
-                    <a href="#">Learn more</a>
+                    <a href="">Learn more</a>
                 </div>
                 <div onmouseover="changebg('over','mob')" onmouseout="changebg('out','mob')">
                     <!-- <i class="fa-brands fa-html5"></i>
@@ -116,7 +115,7 @@
                     <i id="mob" class="fa-solid fa-mobile-screen"></i>
                     <h2>Responsive Design</h2>
                     <p>Developed responsive websites where the UserInterface looks apt on mobile-view as well as desktop-view.</p>
-                    <a href="#">Learn more</a>
+                    <a href="">Learn more</a>
                 </div>
             </div>
        </div>
@@ -176,12 +175,13 @@
                     <a href="IMAGES/MUKESH S.pdf" download><button class="btn" onclick="return download()">Download Resume</button></a>
                 </div>
                 <div class="contact-right">
-                    <form>
-                        <input type="text" name="user name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -200,6 +200,25 @@
             The website will be available for mobile screen once the development is done.
              <br><br> ~ Mukesh <i id="heart" class="fa-solid fa-heart"></i>  </h1>
     </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbylN1wXNCAUzz8V5NnxF963XBXEDpTxSrG88xbxvh2S92vcgVNG4mooMLGNOEj1E_WWFQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => { 
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                  msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 
    </body>
 </html>

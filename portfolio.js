@@ -47,5 +47,4 @@ function download()
         alert("Wrong Password -- Access Denied");
         return false;
     }
-    
 }

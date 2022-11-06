@@ -114,7 +114,7 @@ nav ul li a:hover::after {
     /* margin-right: 190px;
     margin-top : 130px ; */
     margin : 100px 230px 0px 0px;
-}
+}  
 
 /* -------------------------------------About------------------------------------------- */
 
@@ -528,11 +528,17 @@ form .btn {
     color: yellow;
 }
 
+#msg {
+    color : #61b752;
+    margin-top: -30px;
+    display: block;
+    font-weight: bold;
+}
 
 /* ---------------------------- css for small screen -------------------------------- */
 
 
-@media screen and (max-width:1000px){
+/* @media screen and (max-width:1000px){
     body .container,#about,#skillset,#portfolio,#contact{
         display : none;
     }
@@ -560,4 +566,9 @@ form .btn {
         font-size: 150px;
     }
 
-}
+} */
+
+/* @media screen and (max-width:600px) {
+
+   
+} */
