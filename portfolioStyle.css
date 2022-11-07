@@ -145,6 +145,7 @@ nav ul li a:hover::after {
     width : 80%;
     height : 70%;
     display : flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -643,6 +644,7 @@ form .btn {
         height: 100vh;
         padding-top: 50px;
         display: block;
+        transition: 0.5s;
     }
     
     nav ul li {
@@ -659,15 +661,57 @@ form .btn {
         position: absolute;
         top : 0;
         right : 0;
-        padding : 15px;
+        padding : 25px;
     }
 
     .menu-icon {
         padding-right: 20px;
     }
     
+   /* -----------------------about--------------- */
 
+   .sub-heading {
+    font-size: 40px;
+   }
 
+   .about-container {
+    align-items: center;
+   }
+   .about-row {
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: 1fr 1fr; */
+   }
 
+   .about-col-1 {
+    width: 100%;
+    background-size: 200px;
+    background-position: bottom;
+    height : 300px;
+    align-self: flex-start;
+   }
 
+   .about-col-2 {
+    width: 100%;
+    margin: 20px 0;
+   }
+
+   /* ---------------------skills------------------- */
+
+   #skillset {
+      margin-top: 400px;
+   }
+
+   .skillset-container .skillset-list{
+    margin-top: 40px;
+   }
+   /* -------------------portfolio----------------- */
+
+   #portfolio {
+    margin-top: 580px;
+   }
+
+   .portfolio-section .task {
+    margin: 0;
+   }
 }
