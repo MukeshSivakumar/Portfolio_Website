@@ -670,7 +670,7 @@ form .btn {
    /* -----------------------about--------------- */
 
    .sub-heading {
-    font-size: 40px;
+    font-size: 30px;
    }
 
    .about-container {
@@ -695,10 +695,15 @@ form .btn {
     margin: 20px 0;
    }
 
+   .about-col-2 #skills,#experience,#education,#certificate {
+
+    font-size: 13px;
+    margin-right: 10px;
+   }
    /* ---------------------skills------------------- */
 
    #skillset {
-      margin-top: 380px;
+      margin-top: 330px;
    }
 
    .skillset-container .skillset-list{
