@@ -48,3 +48,25 @@ function download()
         return false;
     }
 }
+
+// Mobile open menu tab
+
+function openMenu()
+{
+    let menuSection = document.getElementById("menu-list");
+    let closeIcon = document.getElementById("close-icon");
+
+    menuSection.style.width = "200px";
+    closeIcon.style.display = "block";
+}
+
+// Mobile close menu tab
+
+function closeMenu()
+{
+    let menuSection = document.getElementById("menu-list");
+    let closeIcon = document.getElementById("close-icon");
+
+    menuSection.style.width = "0";
+    closeIcon.style.display = "none";
+}
