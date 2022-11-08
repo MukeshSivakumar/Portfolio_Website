@@ -591,6 +591,7 @@ form .btn {
         margin : 0;
         padding : 0;
     }
+
     .container {
         /* width : 100%; */
         background: url(IMAGES/mobile\ BG\ main.PNG);
@@ -669,12 +670,15 @@ form .btn {
     
    /* -----------------------about--------------- */
 
+   #about {
+    margin-top : 30px;
+   }
    .sub-heading {
     font-size: 30px;
    }
 
    .about-container {
-    align-items: center;
+    align-items: start;
    }
    .about-row {
     display: grid;
@@ -703,7 +707,7 @@ form .btn {
    /* ---------------------skills------------------- */
 
    #skillset {
-      margin-top: 330px;
+      margin-top: 170px;
    }
 
    .skillset-container .skillset-list{
@@ -712,10 +716,16 @@ form .btn {
    /* -------------------portfolio----------------- */
 
    #portfolio {
-    margin-top: 500px;
+    margin-top: 480px;
    }
 
    .portfolio-section .task {
     margin: 0;
+   }
+
+   /* ---------------------contact---------------------- */
+
+   #contact {
+    margin-top: 30px;
    }
 }
