@@ -64,9 +64,16 @@ function openMenu()
 
 function closeMenu()
 {
-    let menuSection = document.getElementById("menu-list");
-    let closeIcon = document.getElementById("close-icon");
-
-    menuSection.style.width = "0";
-    closeIcon.style.display = "none";
+    // screen width condition added to fix alignment issue
+    let screenWidth = window.screen.width;
+    if(screenWidth < 600) 
+    {
+        let menuSection = document.getElementById("menu-list");
+        let closeIcon = document.getElementById("close-icon");
+        let menuIcon = document.getElementById("menu-icon");
+    
+        menuSection.style.width = "0";
+        closeIcon.style.display = "none";
+    }
+    
 }
