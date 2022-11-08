@@ -671,7 +671,7 @@ form .btn {
    /* -----------------------about--------------- */
 
    #about {
-    margin-top : 30px;
+    margin-top : 50px;
    }
    .sub-heading {
     font-size: 30px;
@@ -707,16 +707,20 @@ form .btn {
    /* ---------------------skills------------------- */
 
    #skillset {
-      margin-top: 170px;
+      margin-top: 130px;
    }
 
-   .skillset-container .skillset-list{
-    margin-top: 40px;
+    .skillset-list{
+    margin-top: 30px;
    }
    /* -------------------portfolio----------------- */
 
    #portfolio {
-    margin-top: 480px;
+    margin-top: 500px;
+   }
+
+   .portfolio-container .sub-heading {
+    margin : 0;
    }
 
    .portfolio-section .task {
